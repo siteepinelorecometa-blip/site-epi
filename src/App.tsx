@@ -503,27 +503,6 @@ function FarmPedidosPage({
       ) : (
         <MeusPedidosList usuario={usuario} pedidos={pedidos} epis={epis} />
       )}
-      <AppDialog
-        isOpen={appDialog.isOpen}
-        mode={appDialog.mode}
-        title={appDialog.title}
-        message={appDialog.message}
-        variant={appDialog.variant}
-        onClose={() => {
-          if (appDialog.mode === "confirm" && dialogCancelAction) {
-            dialogCancelAction();
-            return;
-          }
-          closeAppDialog();
-        }}
-        onConfirm={() => {
-          if (dialogConfirmAction) {
-            dialogConfirmAction();
-            return;
-          }
-          closeAppDialog();
-        }}
-      />
     </div>
   );
 }
