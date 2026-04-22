@@ -89,49 +89,4 @@ main,
   height: auto !important;
   min-height: 0 !important;
   }
-@media print {
 
-  html, body, #root {
-    background: white !important;
-    color: black !important;
-    margin: 0;
-    padding: 0;
-  }
-
-  
-  nav, aside, button, .no-print, svg, canvas, .bg-slate-900, .bg-emerald-950\/30 {
-    display: none !important;
-  }
-
-  
-  main {
-    display: block !important;
-    width: 100% !important;
-  }
-
-  .grid {
-    display: block !important; 
-  }
-  .grid > button, .grid > div {
-    border: none !important;
-    border-bottom: 1px solid #ccc !important; 
-    margin-bottom: 10px !important;
-    padding: 10px 0 !important;
-    background: transparent !important;
-    display: flex !important;
-    justify-content: space-between !important;
-    width: 100% !important;
-  }
-  .text-white, .text-slate-400, .text-emerald-400 {
-    color: black !important;
-  }
-  body::before {
-    content: "RELATÓRIO DE ANALYTICS - SISTEMA EPI";
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    text-decoration: underline;
-  }
-}
