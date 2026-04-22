@@ -397,7 +397,45 @@ function Dashboard({
             ))}
           </div>
         </div>
-      )}
+            )}
+
+      {/* AREA DE IMPRESSÃO */}
+      <div id="print-area" style={{ display: "none" }}>
+        <h1>RELATÓRIO DE ANALYTICS - EPI</h1>
+
+        <p><strong>Empresa:</strong> COMETA DO PANTANAL</p>
+        <p><strong>Cidade:</strong> Cáceres - MT</p>
+
+        <hr />
+
+        {stats.map((item, index) => (
+          <p key={index}>
+            <strong>{item.titulo}:</strong> {item.valor}
+          </p>
+        ))}
+
+        <hr />
+
+        <h3>Pedidos Recentes</h3>
+        {pedidosRecentes.map((p) => (
+          <p key={p.id}>
+            {p.id} - {formatDate(p.dataPedido)}
+          </p>
+        ))}
+
+        <h3>Entregas Recentes</h3>
+        {entregasRecentes.map((e) => (
+          <p key={e.id}>
+            {e.id} - {formatDate(e.dataEntrega)}
+          </p>
+        ))}
+
+        <br /><br />
+
+        <p>Responsável: __________________________</p>
+        <p>Data: ____/____/______</p>
+      </div>
+
     </div>
   );
 }
