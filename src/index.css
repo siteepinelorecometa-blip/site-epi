@@ -88,4 +88,22 @@ main,
   padding: 0 !important;
   height: auto !important;
   min-height: 0 !important;
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #print-area, #print-area * {
+    visibility: visible;
+  }
+
+  #print-area {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    font-family: Arial;
+  }
 }
