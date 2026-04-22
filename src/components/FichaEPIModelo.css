@@ -235,16 +235,13 @@
 
 .ficha-legenda {
   position: absolute;
-  bottom: 120px; 
-  right: 100px;  
-  width: auto;   
-  max-width: 400px; 
+  top: 790px;
+  left: 98px;
+  width: 630px;
   font-size: 8px;
   color: #b00000;
   z-index: 4;
-  text-align: right; 
 }
-
 .ficha-assinaturas-linhas {
   position: absolute;
   top: 1000px;
