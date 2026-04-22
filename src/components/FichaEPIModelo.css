@@ -235,23 +235,23 @@
 
 .ficha-legenda {
   position: absolute;
-  top: 820px;
-  left: 98px;
-  width: 630px;
+  bottom: 120px; 
+  right: 100px;  
+  width: auto;   
+  max-width: 400px; 
   font-size: 8px;
   color: #b00000;
   z-index: 4;
-  text-align: center;
+  text-align: right; 
 }
 
 .ficha-assinaturas-linhas {
   position: absolute;
-  top: 880px;
-  left: 0px;
-  width: 100px;
+  top: 1000px;
+  left: 115px;
+  width: 560px;
   display: flex;
-  justify-content: center;
-  gap: 120px;
+  justify-content: space-between;
   z-index: 4;
 }
 
@@ -263,15 +263,13 @@
 
 .ficha-assinaturas {
   position: absolute;
-  top: 890px;
-  left: 0px;
-  width: 100px;
+  top: 1008px;
+  left: 110px;
+  width: 575px;
   display: flex;
-  justify-content: center;
-  gap: 120px;
+  justify-content: space-between;
   font-size: 9px;
   z-index: 4;
-  text-align: center;
 }
 
 @media print {
