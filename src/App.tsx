@@ -1093,9 +1093,6 @@ function Analytics({
 
   const cores = ["#eab308", "#8b5cf6", "#3b82f6", "#10b981", "#f97316", "#ef4444"];
 
-  const handleImprimirPDF = () => {
-    window.print();
-  };
 
   return (
     <div className="space-y-6 analytics-print-area">
@@ -1124,23 +1121,7 @@ function Analytics({
               ))}
             </select>
           </div>
-
-          <div className="flex items-end">
-            <button
-              onClick={handleImprimirPDF}
-              className="px-4 py-3 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 font-medium"
-            >
-              PDF / Imprimir
-            </button>
-          </div>
         </div>
-      </div>
-
-      <div className="hidden print:block">
-        <h1 className="text-2xl font-bold text-black">Relatório Analytics</h1>
-        <p className="text-sm text-black mt-1">
-          Competência: {formatarMes(mesSelecionado)}
-        </p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
